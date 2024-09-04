@@ -1,0 +1,736 @@
+Analysis & Synthesis report for amuntitled
+Wed Sep 04 16:37:56 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product
+ 11. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i
+ 12. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_bus_build_GNGCK3JP43:bus_builder
+ 13. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay
+ 14. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i
+ 15. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i|alt_dspbuilder_sAltrPropagate:u0
+ 16. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0
+ 17. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi
+ 18. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0
+ 19. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1
+ 20. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi
+ 21. Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0
+ 22. Parameter Settings for Inferred Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0
+ 23. lpm_mult Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0"
+ 25. Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i"
+ 26. Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 04 16:37:56 2024           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; amuntitled                                      ;
+; Top-level Entity Name              ; amuntitled                                      ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 16                                              ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 16                                              ;
+; Total registers                    ; 16                                              ;
+; Total pins                         ; 71                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 2                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; amuntitled         ; amuntitled         ;
+; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                 ;
++---------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                  ; Library ;
++---------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; hdl/amuntitled_GN.vhd                       ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd                       ;         ;
+; hdl/alt_dspbuilder_bus_build_GNGCK3JP43.vhd ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_bus_build_GNGCK3JP43.vhd ;         ;
+; hdl/alt_dspbuilder_cast_GN2TL7HGV4.vhd      ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GN2TL7HGV4.vhd      ;         ;
+; hdl/alt_dspbuilder_SBF.vhd                  ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SBF.vhd                  ;         ;
+; hdl/alt_dspbuilder_sAltrPropagate.vhd       ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_sAltrPropagate.vhd       ;         ;
+; hdl/alt_dspbuilder_cast_GNYH4N5SPJ.vhd      ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GNYH4N5SPJ.vhd      ;         ;
+; hdl/alt_dspbuilder_clock_GNQFU4PUDH.vhd     ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_clock_GNQFU4PUDH.vhd     ;         ;
+; hdl/alt_dspbuilder_delay_GNG36NZ2PG.vhd     ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay_GNG36NZ2PG.vhd     ;         ;
+; hdl/alt_dspbuilder_SDelay.vhd               ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SDelay.vhd               ;         ;
+; hdl/alt_dspbuilder_gnd_GN.vhd               ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_gnd_GN.vhd               ;         ;
+; hdl/alt_dspbuilder_port_GN37ALZBS4.vhd      ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN37ALZBS4.vhd      ;         ;
+; hdl/alt_dspbuilder_port_GN5RJOJIHL.vhd      ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN5RJOJIHL.vhd      ;         ;
+; hdl/alt_dspbuilder_port_GNBO6OMO5Y.vhd      ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GNBO6OMO5Y.vhd      ;         ;
+; hdl/alt_dspbuilder_product_GNO6FDVQSR.vhd   ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product_GNO6FDVQSR.vhd   ;         ;
+; hdl/alt_dspbuilder_AltiMult.vhd             ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AltiMult.vhd             ;         ;
+; hdl/alt_dspbuilder_vcc_GN.vhd               ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vcc_GN.vhd               ;         ;
+; hdl/amuntitled.vhd                          ; yes             ; User VHDL File               ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled.vhd                          ;         ;
+; lpm_mult.tdf                                ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_mult.tdf                                                ;         ;
+; aglobal180.inc                              ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/aglobal180.inc                                              ;         ;
+; lpm_add_sub.inc                             ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_add_sub.inc                                             ;         ;
+; multcore.inc                                ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/multcore.inc                                                ;         ;
+; bypassff.inc                                ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/bypassff.inc                                                ;         ;
+; altshift.inc                                ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altshift.inc                                                ;         ;
+; db/mult_or01.tdf                            ; yes             ; Auto-Generated Megafunction  ; D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/db/mult_or01.tdf                            ;         ;
++---------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                                                 ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Resource                 ; Usage                                                                                                                                                                            ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O pins                 ; 71                                                                                                                                                                               ;
+;                          ;                                                                                                                                                                                  ;
+; DSP block 9-bit elements ; 2                                                                                                                                                                                ;
+;                          ;                                                                                                                                                                                  ;
+; Maximum fan-out node     ; amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0|mult_or01:auto_generated|mac_out2 ;
+; Maximum fan-out          ; 19                                                                                                                                                                               ;
+; Total fan-out            ; 189                                                                                                                                                                              ;
+; Average fan-out          ; 1.18                                                                                                                                                                             ;
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                 ; Entity Name                       ; Library Name ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |amuntitled                                              ; 0 (0)               ; 16 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0         ; 71   ; 0            ; |amuntitled                                                                                                                                                                         ; amuntitled                        ; work         ;
+;    |amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0| ; 0 (0)               ; 16 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0                                                                                                                     ; amuntitled_GN                     ; work         ;
+;       |alt_dspbuilder_delay_GNG36NZ2PG:delay|            ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay                                                                               ; alt_dspbuilder_delay_GNG36NZ2PG   ; work         ;
+;          |alt_dspbuilder_SDelay:Delay1i|                 ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i                                                 ; alt_dspbuilder_SDelay             ; work         ;
+;       |alt_dspbuilder_product_GNO6FDVQSR:product|        ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product                                                                           ; alt_dspbuilder_product_GNO6FDVQSR ; work         ;
+;          |alt_dspbuilder_AltiMult:Product1i|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i                                         ; alt_dspbuilder_AltiMult           ; work         ;
+;             |lpm_mult:Mult0|                             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0                          ; lpm_mult                          ; work         ;
+;                |mult_or01:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0         ; 0    ; 0            ; |amuntitled|amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0|mult_or01:auto_generated ; mult_or01                         ; work         ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Simple Multipliers (36-bit)           ; 0           ;
+; Multiply Accumulators (18-bit)        ; 0           ;
+; Two-Multipliers Adders (9-bit)        ; 0           ;
+; Two-Multipliers Adders (18-bit)       ; 0           ;
+; Four-Multipliers Adders (9-bit)       ; 0           ;
+; Four-Multipliers Adders (18-bit)      ; 0           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 0           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 16    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product ;
++------------------+-------+-----------------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                                                                            ;
++------------------+-------+-----------------------------------------------------------------------------------------------------------------+
+; usededicatedmult ; 1     ; Signed Integer                                                                                                  ;
+; signed           ; 1     ; Signed Integer                                                                                                  ;
+; lpm              ; 0     ; Signed Integer                                                                                                  ;
+; maskvalue        ; 1     ; String                                                                                                          ;
+; pipeline         ; 0     ; Signed Integer                                                                                                  ;
+; width_b          ; 2     ; Signed Integer                                                                                                  ;
+; width_a          ; 16    ; Signed Integer                                                                                                  ;
++------------------+-------+-----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i ;
++----------------+-----------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value                                               ; Type                                                                                                  ;
++----------------+-----------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; lpm_widtha     ; 16                                                  ; Signed Integer                                                                                        ;
+; lpm_widthb     ; 2                                                   ; Signed Integer                                                                                        ;
+; dspb_widthr    ; 18                                                  ; Signed Integer                                                                                        ;
+; lpm_hint       ; DEDICATED_MULTIPLIER_CIRCUITRY=YES,MAXIMIZE_SPEED=1 ; String                                                                                                ;
+; cst_val        ; 00000000                                            ; Unsigned Binary                                                                                       ;
+; one_input      ; 0                                                   ; Signed Integer                                                                                        ;
+; pipeline       ; 0                                                   ; Signed Integer                                                                                        ;
+; sequencelength ; 1                                                   ; Signed Integer                                                                                        ;
+; sequencevalue  ; 1                                                   ; Unsigned Binary                                                                                       ;
+; lpm            ; 0                                                   ; Signed Integer                                                                                        ;
++----------------+-----------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_bus_build_GNGCK3JP43:bus_builder ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+; width          ; 2     ; Signed Integer                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay ;
++----------------+------------------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value            ; Type                                                                                               ;
++----------------+------------------+----------------------------------------------------------------------------------------------------+
+; clockphase     ; 1                ; String                                                                                             ;
+; bitpattern     ; 0000000000000001 ; String                                                                                             ;
+; width          ; 16               ; Signed Integer                                                                                     ;
+; use_init       ; 0                ; Signed Integer                                                                                     ;
+; delay          ; 1                ; Signed Integer                                                                                     ;
++----------------+------------------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; lpm_width      ; 16    ; Signed Integer                                                                                                                              ;
+; lpm_delay      ; 1     ; Signed Integer                                                                                                                              ;
+; sequencelength ; 1     ; Signed Integer                                                                                                                              ;
+; sequencevalue  ; 1     ; Unsigned Binary                                                                                                                             ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i|alt_dspbuilder_sAltrPropagate:u0 ;
++----------------+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value       ; Type                                                                                                                                                                   ;
++----------------+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; width          ; 16          ; Signed Integer                                                                                                                                                         ;
+; qtb            ; on          ; String                                                                                                                                                                 ;
+; qtb_product    ; DSP Builder ; String                                                                                                                                                                 ;
+; qtb_version    ; 7.2         ; String                                                                                                                                                                 ;
++----------------+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; round          ; 0     ; Signed Integer                                                                                               ;
+; saturate       ; 0     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi ;
++----------------+---------------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value         ; Type                                                                                                                            ;
++----------------+---------------+---------------------------------------------------------------------------------------------------------------------------------+
+; width_inl      ; 2             ; Signed Integer                                                                                                                  ;
+; width_inr      ; 0             ; Signed Integer                                                                                                                  ;
+; width_outl     ; 1             ; Signed Integer                                                                                                                  ;
+; width_outr     ; 0             ; Signed Integer                                                                                                                  ;
+; round          ; 0             ; Signed Integer                                                                                                                  ;
+; satur          ; 0             ; Signed Integer                                                                                                                  ;
+; lpm_signed     ; BusIsUnsigned ; Enumerated                                                                                                                      ;
++----------------+---------------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0 ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value       ; Type                                                                                                                                                               ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; width          ; 2           ; Signed Integer                                                                                                                                                     ;
+; qtb            ; on          ; String                                                                                                                                                             ;
+; qtb_product    ; DSP Builder ; String                                                                                                                                                             ;
+; qtb_version    ; 7.2         ; String                                                                                                                                                             ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; round          ; 0     ; Signed Integer                                                                                               ;
+; saturate       ; 0     ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi ;
++----------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value       ; Type                                                                                                                              ;
++----------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; width_inl      ; 18          ; Signed Integer                                                                                                                    ;
+; width_inr      ; 0           ; Signed Integer                                                                                                                    ;
+; width_outl     ; 19          ; Signed Integer                                                                                                                    ;
+; width_outr     ; 0           ; Signed Integer                                                                                                                    ;
+; round          ; 0           ; Signed Integer                                                                                                                    ;
+; satur          ; 0           ; Signed Integer                                                                                                                    ;
+; lpm_signed     ; BusIsSigned ; Enumerated                                                                                                                        ;
++----------------+-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0 ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value       ; Type                                                                                                                                                               ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; width          ; 18          ; Signed Integer                                                                                                                                                     ;
+; qtb            ; on          ; String                                                                                                                                                             ;
+; qtb_product    ; DSP Builder ; String                                                                                                                                                             ;
+; qtb_version    ; 7.2         ; String                                                                                                                                                             ;
++----------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                                                                                                           ;
++------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                                                                                                     ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                                                                                                                   ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                                                                                                                   ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                                                                                                                 ;
+; LPM_WIDTHA                                     ; 16            ; Untyped                                                                                                                        ;
+; LPM_WIDTHB                                     ; 2             ; Untyped                                                                                                                        ;
+; LPM_WIDTHP                                     ; 18            ; Untyped                                                                                                                        ;
+; LPM_WIDTHR                                     ; 18            ; Untyped                                                                                                                        ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                                                                                                        ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                                                                                                        ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                                                                                                        ;
+; LATENCY                                        ; 0             ; Untyped                                                                                                                        ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                                                                                                        ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                                                                                                        ;
+; USE_EAB                                        ; OFF           ; Untyped                                                                                                                        ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                                                                                                        ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                                                                                                        ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                                                                                                        ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                                                                                                            ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; YES           ; Untyped                                                                                                                        ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                                                                                                        ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                                                                                                        ;
+; CBXI_PARAMETER                                 ; mult_or01     ; Untyped                                                                                                                        ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                                                                                                        ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                                                                                                        ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                                                                                                        ;
++------------------------------------------------+---------------+--------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                                                                                                         ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name                                  ; Value                                                                                                                                          ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Number of entity instances            ; 1                                                                                                                                              ;
+; Entity Instance                       ; amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                                                                                                                             ;
+;     -- LPM_WIDTHB                     ; 2                                                                                                                                              ;
+;     -- LPM_WIDTHP                     ; 18                                                                                                                                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                                                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                                                             ;
+;     -- USE_EAB                        ; OFF                                                                                                                                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; YES                                                                                                                                            ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                                                                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                                                                             ;
++---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0" ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; r[1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i" ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                              ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+; user_aclr ; Input ; Info     ; Stuck at GND                                                                                                         ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; part_sclr ; Input ; Info     ; Stuck at GND                                                                                                                 ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++---------------------+-------------------------------+
+; Type                ; Count                         ;
++---------------------+-------------------------------+
+; boundary_port       ; 71                            ;
+; cycloneiii_ff       ; 16                            ;
+;     CLR             ; 16                            ;
+; cycloneiii_mac_mult ; 1                             ;
+; cycloneiii_mac_out  ; 1                             ;
+;                     ;                               ;
+; Max LUT depth       ; 0.00                          ;
+; Average LUT depth   ; 0.00                          ;
++---------------------+-------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Wed Sep 04 16:37:48 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off amuntitled -c amuntitled
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/amuntitled_gn.vhd
+    Info (12022): Found design unit 1: amuntitled_GN-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 22
+    Info (12023): Found entity 1: amuntitled_GN File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/tb_amuntitled.vhd
+    Info (12022): Found design unit 1: tb_amuntitled-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/tb_amuntitled.vhd Line: 12
+    Info (12023): Found entity 1: tb_amuntitled File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/tb_amuntitled.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_bus_build_gngck3jp43.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_bus_build_GNGCK3JP43-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_bus_build_GNGCK3JP43.vhd Line: 22
+    Info (12023): Found entity 1: alt_dspbuilder_bus_build_GNGCK3JP43 File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_bus_build_GNGCK3JP43.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_cast_gn2tl7hgv4.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_cast_GN2TL7HGV4-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GN2TL7HGV4.vhd Line: 22
+    Info (12023): Found entity 1: alt_dspbuilder_cast_GN2TL7HGV4 File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GN2TL7HGV4.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_sbf.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_SBF-SBF_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SBF.vhd Line: 43
+    Info (12023): Found entity 1: alt_dspbuilder_SBF File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SBF.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_asat.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_ASAT-ASAT_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_ASAT.vhd Line: 38
+    Info (12023): Found entity 1: alt_dspbuilder_ASAT File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_ASAT.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_saltrpropagate.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_sAltrPropagate-sAltrPropagate_Synth File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_sAltrPropagate.vhd Line: 36
+    Info (12023): Found entity 1: alt_dspbuilder_sAltrPropagate File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_sAltrPropagate.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_around.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_AROUND-AROUND_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AROUND.vhd Line: 37
+    Info (12023): Found entity 1: alt_dspbuilder_AROUND File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AROUND.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_cast_gnyh4n5spj.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_cast_GNYH4N5SPJ-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GNYH4N5SPJ.vhd Line: 22
+    Info (12023): Found entity 1: alt_dspbuilder_cast_GNYH4N5SPJ File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GNYH4N5SPJ.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_clock_gnqfu4pudh.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_clock_GNQFU4PUDH-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_clock_GNQFU4PUDH.vhd Line: 24
+    Info (12023): Found entity 1: alt_dspbuilder_clock_GNQFU4PUDH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_clock_GNQFU4PUDH.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_delay_gng36nz2pg.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_delay_GNG36NZ2PG-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay_GNG36NZ2PG.vhd Line: 27
+    Info (12023): Found entity 1: alt_dspbuilder_delay_GNG36NZ2PG File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay_GNG36NZ2PG.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_sdelay.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_SDelay-SDelay_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SDelay.vhd Line: 43
+    Info (12023): Found entity 1: alt_dspbuilder_SDelay File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SDelay.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_sinitdelay.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_SInitDelay-SInitDelay_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SInitDelay.vhd Line: 46
+    Info (12023): Found entity 1: alt_dspbuilder_SInitDelay File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SInitDelay.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_saltrbitpropagate.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_sAltrBitPropagate-sAltrBitPropagate_Synth File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_sAltrBitPropagate.vhd Line: 35
+    Info (12023): Found entity 1: alt_dspbuilder_sAltrBitPropagate File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_sAltrBitPropagate.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_vecseq.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_vecseq-seq_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vecseq.vhd Line: 40
+    Info (12023): Found entity 1: alt_dspbuilder_vecseq File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vecseq.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_gnd_gn.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_gnd_GN-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_gnd_GN.vhd Line: 18
+    Info (12023): Found entity 1: alt_dspbuilder_gnd_GN File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_gnd_GN.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_port_gn37alzbs4.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_port_GN37ALZBS4-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN37ALZBS4.vhd Line: 21
+    Info (12023): Found entity 1: alt_dspbuilder_port_GN37ALZBS4 File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN37ALZBS4.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_port_gn5rjojihl.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_port_GN5RJOJIHL-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN5RJOJIHL.vhd Line: 21
+    Info (12023): Found entity 1: alt_dspbuilder_port_GN5RJOJIHL File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GN5RJOJIHL.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_port_gnbo6omo5y.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_port_GNBO6OMO5Y-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GNBO6OMO5Y.vhd Line: 21
+    Info (12023): Found entity 1: alt_dspbuilder_port_GNBO6OMO5Y File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_port_GNBO6OMO5Y.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_product_gno6fdvqsr.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_product_GNO6FDVQSR-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product_GNO6FDVQSR.vhd Line: 30
+    Info (12023): Found entity 1: alt_dspbuilder_product_GNO6FDVQSR File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product_GNO6FDVQSR.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_bext.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_BEXT-ax File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_BEXT.vhd Line: 42
+    Info (12023): Found entity 1: alt_dspbuilder_BEXT File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_BEXT.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_nbext.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_nBEXT-ax File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_nBEXT.vhd Line: 42
+    Info (12023): Found entity 1: alt_dspbuilder_nBEXT File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_nBEXT.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_cst_mult.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_CST_MULT-synth File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_CST_MULT.vhd Line: 48
+    Info (12023): Found entity 1: alt_dspbuilder_CST_MULT File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_CST_MULT.vhd Line: 30
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_altimult.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_AltiMult-AltMult_SYNTH File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AltiMult.vhd Line: 59
+    Info (12023): Found entity 1: alt_dspbuilder_AltiMult File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AltiMult.vhd Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_capture_gnaxodevvw.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_capture_GNAXODEVVW-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNAXODEVVW.vhd Line: 25
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_capture_GNAXODEVVW File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNAXODEVVW.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_capture_gnqx2jtrtz.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_capture_GNQX2JTRTZ-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNQX2JTRTZ.vhd Line: 25
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_capture_GNQX2JTRTZ File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNQX2JTRTZ.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_capture_gnuhqbghyw.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_capture_GNUHQBGHYW-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNUHQBGHYW.vhd Line: 25
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_capture_GNUHQBGHYW File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_capture_GNUHQBGHYW.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_clock_gncgufkhrr.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_clock_GNCGUFKHRR-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_clock_GNCGUFKHRR.vhd Line: 24
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_clock_GNCGUFKHRR File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_clock_GNCGUFKHRR.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_salt_gndbmpydnd.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_salt_GNDBMPYDND-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_salt_GNDBMPYDND.vhd Line: 24
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_salt_GNDBMPYDND File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_salt_GNDBMPYDND.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_salt_gnq2rndgbk.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_salt_GNQ2RNDGBK-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_salt_GNQ2RNDGBK.vhd Line: 24
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_salt_GNQ2RNDGBK File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_salt_GNQ2RNDGBK.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_vcc_gn.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_vcc_GN-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vcc_GN.vhd Line: 18
+    Info (12023): Found entity 1: alt_dspbuilder_vcc_GN File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vcc_GN.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_product.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_product-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product.vhd Line: 32
+    Info (12023): Found entity 1: alt_dspbuilder_product File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_vcc.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_vcc-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vcc.vhd Line: 17
+    Info (12023): Found entity 1: alt_dspbuilder_vcc File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_vcc.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_delay.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_delay-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay.vhd Line: 29
+    Info (12023): Found entity 1: alt_dspbuilder_delay File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_testbench_clock.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_testbench_clock-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_clock.vhd Line: 28
+    Info (12023): Found entity 1: alt_dspbuilder_testbench_clock File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_testbench_clock.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_clock.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_clock-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_clock.vhd Line: 25
+    Info (12023): Found entity 1: alt_dspbuilder_clock File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_clock.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/alt_dspbuilder_gnd.vhd
+    Info (12022): Found design unit 1: alt_dspbuilder_gnd-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_gnd.vhd Line: 17
+    Info (12023): Found entity 1: alt_dspbuilder_gnd File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_gnd.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file hdl/amuntitled.vhd
+    Info (12022): Found design unit 1: amuntitled-rtl File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled.vhd Line: 24
+    Info (12023): Found entity 1: amuntitled File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled.vhd Line: 11
+Info (12127): Elaborating entity "amuntitled" for the top level hierarchy
+Info (12128): Elaborating entity "amuntitled_GN" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled.vhd Line: 42
+Info (12128): Elaborating entity "alt_dspbuilder_clock_GNQFU4PUDH" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_clock_GNQFU4PUDH:clock_0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 155
+Info (12128): Elaborating entity "alt_dspbuilder_port_GN5RJOJIHL" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_port_GN5RJOJIHL:streammod_0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 163
+Info (12128): Elaborating entity "alt_dspbuilder_port_GN37ALZBS4" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_port_GN37ALZBS4:noise_0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 169
+Info (12128): Elaborating entity "alt_dspbuilder_port_GNBO6OMO5Y" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_port_GNBO6OMO5Y:sinln2_0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 175
+Info (12128): Elaborating entity "alt_dspbuilder_product_GNO6FDVQSR" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 181
+Info (12128): Elaborating entity "alt_dspbuilder_AltiMult" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_product_GNO6FDVQSR.vhd Line: 45
+Warning (10036): Verilog HDL or VHDL warning at alt_dspbuilder_AltiMult.vhd(80): object "enadff" assigned a value but never read File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AltiMult.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at alt_dspbuilder_AltiMult.vhd(85): object "aclr_i" assigned a value but never read File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_AltiMult.vhd Line: 85
+Info (12128): Elaborating entity "alt_dspbuilder_gnd_GN" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_gnd_GN:productuser_aclrgnd" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 201
+Info (12128): Elaborating entity "alt_dspbuilder_vcc_GN" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_vcc_GN:productenavcc" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 206
+Info (12128): Elaborating entity "alt_dspbuilder_bus_build_GNGCK3JP43" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_bus_build_GNGCK3JP43:bus_builder" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 211
+Info (12128): Elaborating entity "alt_dspbuilder_delay_GNG36NZ2PG" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 227
+Info (12128): Elaborating entity "alt_dspbuilder_SDelay" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_delay_GNG36NZ2PG.vhd Line: 32
+Info (12128): Elaborating entity "alt_dspbuilder_sAltrPropagate" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_delay_GNG36NZ2PG:delay|alt_dspbuilder_SDelay:Delay1i|alt_dspbuilder_sAltrPropagate:u0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SDelay.vhd Line: 56
+Info (12128): Elaborating entity "alt_dspbuilder_cast_GN2TL7HGV4" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 271
+Info (12128): Elaborating entity "alt_dspbuilder_SBF" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GN2TL7HGV4.vhd Line: 26
+Info (12128): Elaborating entity "alt_dspbuilder_sAltrPropagate" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GN2TL7HGV4:cast0|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SBF.vhd Line: 52
+Info (12128): Elaborating entity "alt_dspbuilder_cast_GNYH4N5SPJ" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/amuntitled_GN.vhd Line: 281
+Info (12128): Elaborating entity "alt_dspbuilder_SBF" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_cast_GNYH4N5SPJ.vhd Line: 26
+Info (12128): Elaborating entity "alt_dspbuilder_sAltrPropagate" for hierarchy "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_cast_GNYH4N5SPJ:cast1|alt_dspbuilder_SBF:Outputi|alt_dspbuilder_sAltrPropagate:u0" File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/hdl/alt_dspbuilder_SBF.vhd Line: 52
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|Mult0" File: d:/intelfpga/18.0/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 680
+Info (12130): Elaborated megafunction instantiation "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0" File: d:/intelfpga/18.0/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 680
+Info (12133): Instantiated megafunction "amuntitled_GN:\amuntitled_GN_0:inst_amuntitled_GN_0|alt_dspbuilder_product_GNO6FDVQSR:product|alt_dspbuilder_AltiMult:Product1i|lpm_mult:Mult0" with the following parameter: File: d:/intelfpga/18.0/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 680
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "2"
+    Info (12134): Parameter "LPM_WIDTHP" = "18"
+    Info (12134): Parameter "LPM_WIDTHR" = "18"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_or01.tdf
+    Info (12023): Found entity 1: mult_or01 File: D:/intelFPGA/18.0/quartus/dsp_builder/bin64/amuntitled_dspbuilder/db/mult_or01.tdf Line: 28
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 16 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Wed Sep 04 16:37:56 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:16
+
+

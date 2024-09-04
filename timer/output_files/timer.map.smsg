@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk10.v(6): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA/18.0/quartus/jishiqi/clk10.v Line: 6

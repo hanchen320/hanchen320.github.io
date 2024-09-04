@@ -1,0 +1,293 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SinDelay[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SinDelay[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamBit",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[0]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[1]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[2]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[3]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[4]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[5]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[6]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[7]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[8]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[9]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[10]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[11]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[12]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[13]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[14]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[15]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[16]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[17]",
+					"strict" : false
+				},
+				{
+					"name" : "StreamMod[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Sinln[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Noise",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "aclr",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
